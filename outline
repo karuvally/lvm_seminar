@@ -2,7 +2,7 @@ Outline
 -------
 * Disk Partitioning - Necessity, Uses, Nature
 * Partition tables - Explanation, Types, Disadvantages, File Systems
-* LVM - Explanation, Nature, Structure, Pros, Cons, Implementing 
+* LVM - So far, Explanation, Nature, Structure, Pros, Cons, Implementing 
 * RAID - Explanation, LVM vs RAID
 * The paper - Explanation, performance
 * Conclusion - Takeaway
