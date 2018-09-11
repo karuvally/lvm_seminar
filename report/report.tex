@@ -7,9 +7,14 @@ computer to read back the data, once written. These specifications are more
 commonly known by the term File Systems. File Systems enforce a uniform method
 of storing and retrieving the data. Further, their popular nature allows the
 device to be read properly across Operating Systems. You must have come across
-at least a couple of file systems, if you have used a computer. Windows machines
-normally use NTFS as its file system. Linux people prefer to use ext4 or btrfs.
-If you own a USB drive, it most probably uses the FAT32 file system.
+at least a couple of file systems, if you have used a computer. Windows use NTFS
+as its file system. Linux people prefer to use ext4 or btrfs. You USB drive most
+probably uses the FAT32 file system.
+
+So when you copy a file to your hard disk, you are writing to the file system
+right? Actually, it is a bit more complicated than that. The computer does not
+simply create a file system on top of your physical device. To create a file
+system, you first need an abstraction, called a partition.
 
 \chapter{Related Work}
 \paragraph{}Juels et the author of the paper `` New approaches to security and
