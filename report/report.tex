@@ -16,8 +16,11 @@ right? Actually, it is a bit more complicated than that. The computer does not
 simply create a file system on top of your physical device. To create a file
 system, you first need an abstraction, called a partition. Partition is a
 logical slice of your physical device. It acts as a container onto which a file
-system can be created. The partition maps to further abstracted version of
-physical locations on the drive.
+system can be created. The partition maps to further abstracted versions of
+physical locations on the drive. Suffice to say, a partition does not
+necessarily have to occuppy the whole storage device. There can be more than one
+partition and each partition can have different file systems, independant from
+the rest of the partitions.
 
 \chapter{Related Work}
 \paragraph{}Juels et the author of the paper `` New approaches to security and
