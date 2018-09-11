@@ -1,5 +1,5 @@
 
-\chapter{Introduction}
+\chapter{Introduction to File Systems}
 \paragraph{}
 Computers use secondary storage devices to permanently store data. To write the
 data, a computer uses one of the widely known specifications. This allows the
@@ -9,7 +9,7 @@ of storing and retrieving the data. Further, their popular nature allows the
 device to be read properly across Operating Systems. You must have come across
 at least a couple of file systems, if you have used a computer. Windows use NTFS
 as its file system. Linux people prefer to use ext4 or btrfs. You USB drive most
-probably uses the FAT32 file system.
+probably uses the FAT32 file system.\\
 
 So when you copy a file to your hard disk, you are writing to the file system
 right? Actually, it is a bit more complicated than that. The computer does not
@@ -20,43 +20,18 @@ system can be created. The partition maps to further abstracted versions of
 physical locations on the drive. Suffice to say, a partition does not
 necessarily have to occuppy the whole storage device. There can be more than one
 partition and each partition can have different file systems, independant from
-the rest of the partitions.
+the rest of the partitions. The process of creating partitions to store data on
+a storage device is called disk partitioning. Apparently, ghosts of optical and
+magnetic storage media are going to haunt us for a very long time. There is
+quite a bit of interesting things about disk partitioning, which you can read
+more about, in the next chapter.
 
-\chapter{Related Work}
-\paragraph{}Juels et the author of the paper `` New approaches to security and
-availability for cloud data,Communications of the ACM '', Vol.
-56, No. 2, 2013, pp. 64-73  presented a technique to ensure the
-integrity, freshness, and availability of data in a cloud.
-The data migration to the cloud is performed by the
-Iris file system. A gateway application is designed
-and employed in the organization that ensures the
-integrity and freshness of the data using a Merkle
-tree. The file blocks, MAC codes, and version numbers
-are stored at various levels of the tree. The proposed
-technique in the paper heavily depends on the user ′ s em-
-ployed scheme for data confidentiality. Moreover, the
-probable amount of loss in case of data tempering as a
-result of intrusion or access by other VMs cannot be
-decreased. Our proposed strategy does not depend
-on the traditional cryptographic techniques for data
-security. Moreover, the DROPS methodology does
-not store the whole file on a single node to avoid
-compromise of all of the data in case of successful
-attack on the node.
+
+\chapter{Disk Partitioning}
 \paragraph{}
-The authors  G. Kappes, A. Hatzieleftheriou, and S. V. Anastasiadis, Dike of the paper 
-``Virtualization-aware Access Control for Multitenant Filesystems'' University of Ioannina, Greece, approached the virtualized and
-multi-tenancy related issues in the cloud storage by
-utilizing the consolidated storage and native access
-control. The Dike authorization architecture is pro-
-posed that combines the native access control and
-the tenant name space isolation. The proposed system
-is designed and works for object based file systems.
-However, the leakage of critical information in case of
-improper sanitization and malicious VM is not han-
-dled. The DROPS methodology handles the leakage
-of critical information by fragmenting data file and
-using multiple nodes to store a single file.
+
+
+
 \chapter{Existing System Approach}
 In existing system data reliability, data availability, and response time are dealt with data replication strategies. However, storing replicas data over a number of nodes increases the attack surface for that particular data.For example, storing m replicas of a file in a cloud instead of one replica increases the probability of a node holding file to be chosen as attack sufferer, from 1/n to m/n where n is the total number of nodes. Existing system was not achieving proper security.
 \section{Disadvantages}
