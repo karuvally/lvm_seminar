@@ -49,6 +49,11 @@ below.
     \item To have a faster partition for virtual memory
 \end{itemize}
 
+Never forget the fact that, each of these partitions are mere abstractions.
+They are logical divisions which start from a sector of the drive and ends on
+an other sector. If the partitions are purely logical, someone or something has
+to keep track of their locations right? this is the job of the partition table.
+
 
 \chapter{Existing System Approach}
 In existing system data reliability, data availability, and response time are dealt with data replication strategies. However, storing replicas data over a number of nodes increases the attack surface for that particular data.For example, storing m replicas of a file in a cloud instead of one replica increases the probability of a node holding file to be chosen as attack sufferer, from 1/n to m/n where n is the total number of nodes. Existing system was not achieving proper security.
