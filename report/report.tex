@@ -14,7 +14,10 @@ probably uses the FAT32 file system.
 So when you copy a file to your hard disk, you are writing to the file system
 right? Actually, it is a bit more complicated than that. The computer does not
 simply create a file system on top of your physical device. To create a file
-system, you first need an abstraction, called a partition.
+system, you first need an abstraction, called a partition. Partition is a
+logical slice of your physical device. It acts as a container onto which a file
+system can be created. The partition maps to further abstracted version of
+physical locations on the drive.
 
 \chapter{Related Work}
 \paragraph{}Juels et the author of the paper `` New approaches to security and
