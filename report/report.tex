@@ -57,7 +57,14 @@ keep track of their locations right? this is the job of the partition table.
 
 \chapter{Partition table}
 \paragraph{}
-You have paritioned 
+You have partitioned the device as per your heart's content. But as said before,
+the partitions are purely logical creatures. They are abstractions. So where
+does the computer store information on partitions? They cant be stored inside
+the Operating System, as the data is needed first to understand where the OS is
+stored. This is the job of the partition table. A partition table is usually
+stored in the beginning of the drive. Every piece of low level software, that
+tries to read data from the drive accesses the partition table first.
+
 
 
 \section{Centrality}
