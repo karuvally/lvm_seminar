@@ -115,7 +115,15 @@ Further, if you want to modify the \ partition while the system is running, you
 are out of luck. This is disastrous if you think of a production server which is
 constantly serving the needs of clients. Most often, traditional partition
 tables force you to boot into a live environment, if you want to modify anything
-which the OS depends on.
+which the OS depends on.\\
+
+Lets extend the production server concept bit further. Servers need lots of
+space. If your firm is doing something worthwhile, space will eventually run out
+and you will be forced to add more physical drives. Now you want the partition
+having all your critical data to span across both the drives. There actually
+exists a method called "Spanned Volume" on Windows which can do this but not
+before destroying your current partition first. So yes, traditional partitioning
+leaves you out in the cold when such situations arise.
 
 
 \section{Centrality}
