@@ -98,13 +98,20 @@ usable space (HDDs really do these nasty things). We split the drive into four
 partitions as follows:
 
 \begin{itemize}
-    \item Partition 1 of size 50 GB for Linux
+    \item Partition 1 of size 50 GB for /
     \item Partition 2 of size 150 GB for /home
     \item Partition 3 of size 200 GB for Windows
     \item Partition 4 of size 65 GB for Backup
 \end{itemize}
 
-So far so good.
+The drive is partitioned under the assumption that it will suffice for some time
+. But within weeks, the / partition starts filling up. Your Windows partition
+is virtually empty and you try to resize Windows so that you can get some space
+for / partition except that you can't. The / partition can only acquire the
+free space which is adjacent to it. And that by the way is the case with each
+partition on the drive.
+
+
 
 
 \section{Centrality}
