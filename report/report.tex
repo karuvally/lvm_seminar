@@ -144,4 +144,8 @@ existing partitions.\\
 LVM is Linux's answer to all the problems discussed in the previous section, and
 it can do a lot more. In LVM's lingo, the partitions on your drive is called
 Physical Volume (PV). One or more physical volumes group together to form a
-Volume Group (VG).
+Volume Group (VG). A volume group appears as a single continuous space no matter
+how many physical volumes lie underneath. LVM works by creating partitions
+called Logical Volumes (LV) on top of the volume group.\\
+
+
