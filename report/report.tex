@@ -92,6 +92,12 @@ imaginary partitions existing on the disk. The partitions are not physically
 etched on the disk. This should mean they are pretty flexible right? Actually,
 in reality, it is not that straight forward.
 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{partitions.png}
+	\caption{Typical Partition table on a physical disk}
+\end{figure}
+
 \section{Disadvantages}
 Let us imagine that we have a 500 GB Hard Disk, in which 465 GB is the actual
 usable space (HDDs really do these nasty things). We split the drive into four
@@ -125,6 +131,12 @@ exists a method called "Spanned Volume" on Windows which can do this but not
 before destroying your current partition first. So yes, traditional partitioning
 leaves you out in the cold when such situations arise. These are some of the
 problems that gets fixed, when you switch to LVM.
+
+
+\chapter{Logical Volume Manager}
+\paragraph{}
+If partitions are abtractions, Logical Volume Manager or LVM is an abstraction
+on top of abstraction.
 
 
 \section{Centrality}

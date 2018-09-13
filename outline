@@ -2,7 +2,12 @@ Outline
 -------
 * Disk Partitioning - Necessity, Uses, Nature
 * Partition tables - Explanation, Types, Disadvantages, File Systems
-* LVM - So far, Explanation, Nature, Structure, Pros, Cons, Implementing 
+* LVM - So far, Explanation, Nature, Struct, Pros, Cons, Implement, Dev Mapper 
 * RAID - Explanation, LVM vs RAID
 * The paper - Explanation, performance
 * Conclusion - Takeaway
+
+Questions
+---------
+* Does Physical Volumes have file systems?
+* What are striped logical volumes?
