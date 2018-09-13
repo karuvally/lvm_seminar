@@ -109,9 +109,13 @@ The drive is partitioned under the assumption that it will suffice for some time
 is virtually empty and you try to resize Windows so that you can get some space
 for / partition except that you can't. The / partition can only acquire the
 free space which is adjacent to it. And that by the way is the case with each
-partition on the drive.
+partition on the drive.\\
 
-
+Further, if you want to modify the \ partition while the system is running, you
+are out of luck. This is disastrous if you think of a production server which is
+constantly serving the needs of clients. Most often, traditional partition
+tables force you to boot into a live environment, if you want to modify anything
+which the OS depends on.
 
 
 \section{Centrality}
