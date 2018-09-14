@@ -193,5 +193,12 @@ shines through due to ease of setting up the system.
     \item Ability to resize partition without shutting down or even unmounting
     \item A single partition can span one or more physical drives
     \item Take snapshot of entire storage while the system is up
-    \item 
+    \item Striped volumes that can provide enhanced performance
+\end{itemize}
+
+\section{Disadvantages}
+\begin{itemize}
+    \item LVM is Linux only and is not supported under Windows
+    \item If a physical drive fails while using striped volume, data can be lost
+    \item LVM cannot offer raw disk performance
 \end{itemize}
