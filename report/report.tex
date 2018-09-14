@@ -157,13 +157,14 @@ environment or even unmounting the partition is no longer necessary.\\
 Disks fail. Operating Systems crashes. Viruses can attack. All of these can take
 your precious data with them. Backing up data is an option, but what if you want to
 save the current state of your storage? This is where disk imaging comes into
-play.
+play. Disk imaging allows the creation of image of your entire disk. Normally,
+this is done by rebooting your computer and booting into a live environment such
+as CloneZilla. Which means, you guessed it right, more downtime.\\
 
-LVM provides a very handy feature called snapshots. Snapshots allows you to
-create a read only image of your entire storage at one specific point of time.
-Once created, your storage can be restored at anytime to the state at the time 
-of the snapshot. This provides you with a safety net that can be used whenever
-things go wrong.\\
+LVM provides a very handy feature called snapshots, which are like disk images,
+except that you can create one while your system is up. Snapshots allows you to
+create images of your entire storage which can be used to restore the disks to
+the state at the time of creation of the snapshot.
 
 
 
