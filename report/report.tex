@@ -255,3 +255,11 @@ RAID still won't offer the flexibility of resizing the partitions provided by
 LVM. If you wish to extend the partition once a new drive is added, expect some
 downtime. Also, RAID does not offer snapshots. So if you value your data, you
 willing eventually end up implementing LVM on top of your pricey RAID setup.
+
+
+\chapter{LVM Performance}
+When using LVM, all the abstraction layers mean the computer has to process a
+lot of code before hitting the bare metal. This inturn should lead to lower
+performance. But how much performance is lost in this transition? This was the
+question that four independant researchers named Milivoj Bozic, Milos Djukic,
+Dragan Narancic and Istvan Pap tried to tackle.
