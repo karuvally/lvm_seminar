@@ -153,6 +153,13 @@ also they bring a number of goodies to the table, the most prominent being the
 ability to resize partitions on the fly. This means, switching into a live
 environment or even unmounting the partition is no longer necessary.
 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{lvm.png}
+	\caption{Typical LVM structure}
+\end{figure}
+
+
 \section{Implementation}
 The high level, logical nature of LVM means Linux cannot access it like the
 traditional partitions. To solve the issue, Linux uses a piece of code called
@@ -207,5 +214,5 @@ shines through due to ease of setting up the system.
 \chapter{RAID}
 \paragraph{}
 RAID stands for Redundant Array of Inexpensive (or Independant) Disks depending
-on who you might ask.
+on whom you ask. It is
 
