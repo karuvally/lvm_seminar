@@ -136,10 +136,10 @@ problems that gets fixed, when you switch to LVM.
 \chapter{Logical Volume Manager}
 \paragraph{}
 If partitions are abtractions, Logical Volume Manager or LVM is an abstraction
-on top of abstraction. So far we have talked about partitions, which are
-logical structures on top of the physical disk. LVM extends this one step
-further by creating logical volumes, which are usable partitions, on top of
-existing partitions.\\
+on top of abstraction. So far we have talked about partitions, which are logical
+structures on top of the physical disk. LVM extends this one step further by
+creating logical volumes, which are usable partitions, on top of existing
+partitions.\\
 
 LVM is Linux's answer to all the problems discussed in the previous section, and
 it can do a lot more. In LVM's lingo, the partitions on your drive is called
@@ -153,13 +153,17 @@ also they bring a number of goodies to the table, the most prominent being the
 ability to resize partitions on the fly. This means, switching into a live
 environment or even unmounting the partition is no longer necessary.
 
+\section{Implementation}
+The high level, logical nature of LVM means Linux cannot access it like the
+traditional partitions.
+
 \section{Snapshots}
 Disks fail. Operating Systems crashes. Viruses can attack. All of these can take
 your precious data with them. Backing up data is an option, but what if you want to
 save the current state of your storage? This is where disk imaging comes into
 play. Disk imaging allows the creation of image of your entire disk. Normally,
 this is done by rebooting your computer and booting into a live environment such
-as CloneZilla. Which means, you guessed it right, more downtime.\\
+as CloneZilla. Which means, you guessed it, more downtime.\\
 
 LVM provides a very handy feature called snapshots, which are like disk images,
 except that you can create one while your system is up. Snapshots allows you to
@@ -178,5 +182,4 @@ Striped volumes are logical volumes, that can span more than one physical drive.
 The advantage is obvious. You will reading and writing at twice the speed of
 a single drive. There are alternatives to this, such as using RAID. But LVM
 shines through due to ease of setting up the system.
-
 
