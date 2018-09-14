@@ -163,8 +163,9 @@ as CloneZilla. Which means, you guessed it right, more downtime.\\
 
 LVM provides a very handy feature called snapshots, which are like disk images,
 except that you can create one while your system is up. Snapshots allows you to
-create images of your entire storage which can be used to restore the disks to
-the state at the time of creation of the snapshot.
-
-
+create images of your entire storage which can be used to restore disks to the
+state at the time of creation of the snapshot. The advantage is obvious. You can
+continue to server your clients or do your work, while LVM creates a copy of
+your entire drive for future use. Once created, these images act like logical
+volumes, which can be mounted if required.
 
