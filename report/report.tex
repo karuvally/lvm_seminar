@@ -219,6 +219,13 @@ performance, reliability or both. RAID can operate differently according to mode
 in which it operates. There are seven standard modes numbered from 0 to 7. We
 are not going to discuss all of them as it exceeds the scope of this report.
 RAID provides a number of features that are similar to the ones provided by LVM,
-but differences exist, which are discussed in this chapter.\\
+but differences exist, which are discussed in this chapter.
 
-\section{RAID 1}
+\section{RAID Striping}
+Except RAID 1, all RAID levels support the creation of striped partitions. If
+RAID is implemented through a dedicated hardware card, the striping is
+transparent to the Operating System and as a side effect, performs considerably
+faster than an LVM striped volume.\\
+
+Of all the RAID levels, RAID 5 and up is of special interest to us because of
+its distributed parity.
