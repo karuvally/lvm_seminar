@@ -155,7 +155,12 @@ environment or even unmounting the partition is no longer necessary.
 
 \section{Implementation}
 The high level, logical nature of LVM means Linux cannot access it like the
-traditional partitions.
+traditional partitions. To solve the issue, Linux uses a piece of code called
+Device Mapper. Device Mapper passes data from a virtual device such as a logical
+volume to the physical storage device. The snapshot functionality, about which
+you will read in the next section is implemented by the device mapper. The use
+of device mapper extends beyond implementing the LVM. It can be used for
+encrypting disks and simulating hardware behaviour.
 
 \section{Snapshots}
 Disks fail. Operating Systems crashes. Viruses can attack. All of these can take
