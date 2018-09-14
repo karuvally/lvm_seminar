@@ -248,4 +248,10 @@ older drive. I call that expensive.\\
 RAID is fast. But to be fast, your computer should have a dedicated RAID card,
 and these cards do not come cheap. Further, RAID 5 requires that the system have
 at least three drives to begin with. All this makes RAIDing the system
-uncomfortably out of reach of a normal consumer.
+uncomfortably out of reach of a normal consumer.\\
+
+Even if you are ready to invest in a pricey RAID card and at least three HDDs,
+RAID still won't offer the flexibility of resizing the partitions provided by
+LVM. If you wish to extend the partition once a new drive is added, expect some
+downtime. Also, RAID does not offer snapshots. So if you value your data, you
+willing eventually end up implementing LVM on top of your pricey RAID setup.
