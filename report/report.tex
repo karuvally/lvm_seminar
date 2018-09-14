@@ -231,4 +231,13 @@ When you create a striped volume, the main concern is the reliability of the
 drives working underneath. If a drive fails, it can make the data inaccessible
 or useless. RAID level 5 and up tackles this issue by using distributed parity.
 In simpler words, data correction mechanisms make sure that the data stays
-accesible, even if one of the drives in the array fails.
+accesible even if one of the drives in the array fails. But the technology is
+not without its faults.
+
+\section{Disadvantages}
+First of all, RAID striping requires that all of the drives be of same capacity.
+If the computer initially had a 500 GB drive and you bought an additional 1 TB
+drive to do striping, congrats. Now you have two drives with the usable size of
+500 GB. In other words, the extra 500 GB of your new HDD cannot be used. The
+usable size of each drive in a RAID array implementing striping is the size of
+the drive having the least size.
