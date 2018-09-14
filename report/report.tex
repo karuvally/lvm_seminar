@@ -151,7 +151,7 @@ called Logical Volumes (LV) on top of the volume group.\\
 By virtue of definition, the logical volumes can span across physical drives,
 also they bring a number of goodies to the table, the most prominent being the
 ability to resize partitions on the fly. This means, switching into a live
-environment or even unmounting the partition is no longer necessary.\\
+environment or even unmounting the partition is no longer necessary.
 
 \section{Snapshots}
 Disks fail. Operating Systems crashes. Viruses can attack. All of these can take
@@ -168,4 +168,14 @@ state at the time of creation of the snapshot. The advantage is obvious. You can
 continue to server your clients or do your work, while LVM creates a copy of
 your entire drive for future use. Once created, these images act like logical
 volumes, which can be mounted if required.
+
+\section{Striped Volume}
+Lets imagine you have two independant physical drives, which are capable of
+operating, well, independantly. That means, while one drive is doing its job,
+the one is free to do something else. Enter striped volume.\\
+
+Striped volumes are logical volumes, that can span more than one physical drive.
+The advantage is obvious. You will reading and writing at twice the speed of
+a single drive.
+
 
