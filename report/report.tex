@@ -227,5 +227,8 @@ RAID is implemented through a dedicated hardware card, the striping is
 transparent to the Operating System and as a side effect, performs considerably
 faster than an LVM striped volume.\\
 
-Of all the RAID levels, RAID 5 and up is of special interest to us because of
-its distributed parity.
+When you create a striped volume, the main concern is the reliability of the
+drives working underneath. If a drive fails, it can make the data inaccessible
+or useless. RAID level 5 and up tackles this issue by using distributed parity.
+In simpler words, data correction mechanisms make sure that the data stays
+accesible, even if one of the drives in the array fails.
