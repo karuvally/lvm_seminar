@@ -260,6 +260,12 @@ willing eventually end up implementing LVM on top of your pricey RAID setup.
 \chapter{LVM Performance}
 When using LVM, all the abstraction layers mean the computer has to process a
 lot of code before hitting the bare metal. This inturn should lead to lower
-performance. But how much performance is lost in this transition? This was the
-question that four independant researchers named Milivoj Bozic, Milos Djukic,
-Dragan Narancic and Istvan Pap tried to tackle.
+performance. But how much performance is lost in this transition? Four
+independant researchers named Milivoj Bozic, Milos Djukic, Dragan Narancic and
+Istvan Pap decided to find out.\\
+
+They installed 32-bit Linux of Kernel revision 3.14 on two identical single
+board computers. The only difference between these two setups was that, the
+first one had traditional partitioning, while the second one employed LVM. Both
+the traditional and LVM setup had two partitions, one of 10 GB and the other
+of the size 20 GB.\\
