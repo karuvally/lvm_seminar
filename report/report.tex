@@ -275,4 +275,9 @@ While the non-LVM setup took 19 seconds to boot the machine, the LVM and LVM2
 configurations took 23 and 24 seconds respectively. On an average, the LVM
 setup takes a 20\% performance hit, compared to the non-LVM setup. This is
 because the GRUB bootloader has to load an additional module allowing it to
-recognize the LVM partition.
+recognize the LVM volumes.\\
+
+When it comes to file read/write performance, the performance hit is less
+pronounced. While the non-LVM configuration delivers 72 MB/s during the write
+operation of a 100 MB file, the same task delivers a performance of 67 MB/s on
+the LVM setup.
