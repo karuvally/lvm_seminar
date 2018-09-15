@@ -281,4 +281,8 @@ When it comes to file read/write performance, the performance hit is less
 pronounced. While the non-LVM configuration delivers 72 MB/s during the write
 operation of a 100 MB file, the same task delivers a performance of 67 MB/s on
 the LVM setup. The experiments proved that on average, the non-LVM setup was
-only 2\% to 5\% faster than the LVM setup.
+only 2\% to 5\% faster than the LVM setup.\\
+
+Further, the team also tried to benchmark the configurations using a RAID setup.
+It was found that RAID setup takes a 15\% performance hit. This is likely due
+to the onboard RAID controllers used for the research.
