@@ -268,4 +268,8 @@ They installed 32-bit Linux of Kernel revision 3.14 on two identical single
 board computers. The only difference between these two setups was that, the
 first one had traditional partitioning, while the second one employed LVM. Both
 the traditional and LVM setup had two partitions, one of 10 GB and the other
-of the size 20 GB.\\
+of the size 20 GB. Further, the LVM setup was tested in two configurations.
+First with version 1 of LVM and second with version 2 of LVM.\\
+
+While the non-LVM setup took 19 seconds to boot the machine, the LVM and LVM2
+configurations took 23 and 24 seconds respectively.
