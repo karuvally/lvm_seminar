@@ -56,7 +56,7 @@ LVM Based Disk Partitioning}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Partition table}
+\begin{frame}{Partition Table}
     \begin{itemize}
         \item<2-> Stores information about the partitions
         \item<3-> Several formats exist, eg. APM, MBR, GUID, diskLabel
@@ -65,13 +65,21 @@ LVM Based Disk Partitioning}
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Partition Table}
+    \begin{figure}
+        \includegraphics[scale=0.5]{partitions.png}
+    \end{figure}
+\end{frame}
+
 \begin{frame}{Disadvantages of Standard Partition Model}
     \begin{itemize}
         \item<2-> Partitions cannot be manipulated without unmounting them first
         \item<3-> Partitions can use only adjacent free space during resize
         \item<4-> You cannot extend a partition to cover two physical drives
-
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Logical Volume Manager}
 \end{frame}
 
 \begin{frame}{Source Code} 
