@@ -67,7 +67,7 @@ LVM Based Disk Partitioning}
 
 \begin{frame}{Partition Table}
     \begin{figure}
-        \includegraphics[scale=0.5]{partitions.png}
+        \includegraphics[scale=0.45]{partitions.png}
         \caption{A typical partition table}
     \end{figure}
 \end{frame}
@@ -81,7 +81,22 @@ LVM Based Disk Partitioning}
 \end{frame}
 
 \begin{frame}{Logical Volume Manager}
+    \begin{itemize}
+        \item<2-> An abstraction on top of an abstraction
+        \item<3-> Creates logical volumes, on top of existing partitions
+        \item<4-> Existing partitions are called Physical Volumes (PV)
+        \item<5-> One or more physical volumes form Volume Groups (VG)
+        \item<6-> Logical Volumes (LV) are created on top of VGs
+    \end{itemize}
 \end{frame}
+
+\begin{frame}{Logical Volume Manager}
+    \begin{figure}
+        \includegraphics[scale=0.45]{lvm.png}
+        \caption{A typical partition table}
+    \end{figure}
+\end{frame}
+
 
 \begin{frame}{Source Code} 
     \begin{center}
