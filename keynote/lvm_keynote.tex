@@ -98,7 +98,7 @@ LVM Based Disk Partitioning}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Advantages of LVM}
+\begin{frame}{Features of LVM}
     \begin{itemize}
         \item<2-> Mounted volumes can be manipulated
         \item<3-> Partitions can span more than one physical drive
@@ -107,7 +107,21 @@ LVM Based Disk Partitioning}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Advantages of LVM}
+\begin{frame}{LVM vs RAID}
+    \begin{itemize}
+        \item<2-> Redundant Array of Independant Disks 
+        \item<3-> RAID allows combining drives for reliability, performance
+        \item<4-> Eight standard modes RAID level 0 to 7
+        \item<5-> RAID Level 5 and up gives Striping + Parity
+        \item<6-> Higher performance than LVM striping
+        \item<7-> RAID 5 requires at least three drives
+        \item<8-> All drives must be of same capacity
+        \item<9-> Does not offer snapshots
+        \item<10->Mounted partitions cannot be manipulated
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Disadvantages of LVM}
     \begin{itemize}
         \item<2-> Only supported under Linux
         \item<3-> Drive failure while using striped volume cause data loss
